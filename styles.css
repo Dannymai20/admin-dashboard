@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    grid-column: 1;
+    background-color: green;
+    padding: 15px;
+}
+.header {
+    grid-column: 2 / 3;
+    border: 1px solid blue;
+}
+
+.main-content {
+    grid-column: 2 / 3;
+    border: 1px solid red;
+}
