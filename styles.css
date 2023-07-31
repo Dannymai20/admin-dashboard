@@ -9,8 +9,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: auto 1fr;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* Side Bar */
@@ -20,16 +19,21 @@
     grid-column: 1;
     grid-row: 1 / 3;
     background-color: #1893d3ff;
-    padding: 20px;
+    padding: 25px;
 }
 
 .link {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.2rem;
     font-size: 0.8em;
 }
 
+.main-links, .secondary-links {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 50px;
+}
 
 
 /* Header */
