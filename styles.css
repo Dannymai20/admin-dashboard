@@ -10,6 +10,8 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     min-height: 100vh;
+    grid-template-rows: auto 1fr;
+    background-color: #e2e8f0ff;
 }
 
 /* Side Bar */
@@ -40,13 +42,68 @@
 
 .header {
     grid-column: 2 / 3;
-    border: 1px solid blue;
+    padding: 20px 40px;
+    display: grid;
+    gap: 2rem;
+    background-color: white;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
 }
+
+.upper-header {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.upper-left, .upper-right {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.upper-left .search-bar {
+    border-style: none;
+    background-color: #e2e8f0ff;
+    border-radius: 20px;
+    width: 70%;
+    height: 30px;
+}
+
+.upper-right {
+    justify-content: end;
+}
+
+.lower-header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+
+.tasks {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.tasks li {
+    background-color: #1893d3ff;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    width: 100px;
+    height: 20px;
+    color: white;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-weight: 500;
+}
+
+
 
 /* Main Content */
 
 .main-content {
     grid-column: 2 / 3;
-    border: 1px solid red;
-    height: 600px;
+    grid-row: 2;
+    padding: 40px 20px;
 }
