@@ -6,8 +6,6 @@
     font-weight: bold;
 }
 
-
-
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -22,7 +20,7 @@
     color: white;
     grid-column: 1;
     grid-row: 1 / 3;
-    background-color: #1893d3ff;
+    background-color: #4f46e4;
     padding: 25px;
 }
 
@@ -87,7 +85,7 @@
 }
 
 .tasks li {
-    background-color: #1893d3ff;
+    background-color: #4f46e4;
     border-radius: 20px;
     text-align: center;
     padding: 20px;
@@ -107,11 +105,11 @@
 .main-content {
     grid-column: 2 / 3;
     grid-row: 2;
-    padding: 40px 20px;
+    padding: 25px 20px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
 }
 
 .project-container {
@@ -147,12 +145,12 @@
     left: 0;
     width: 5px;
     height: 100%;
-    background-color: #f0b429ff;
+    background-color: #e75581;
 }
 
 .project p {
     margin-top: 5px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .interact {
@@ -162,3 +160,35 @@
     gap: 20px;
 }
 
+/* Announcements and Trending */
+
+.announcements, .trending {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    border-radius: 10px;
+    list-style: none;
+    margin-top: 10px;
+    padding: 20px;
+    display: grid;
+    gap: 15px;
+}
+
+.announcement-name {
+    font-size: 0.9rem;
+}
+
+.description {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+li hr {
+    margin-top: 10px;
+}
+
+.trending li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
